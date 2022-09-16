@@ -71,9 +71,24 @@ a{
     color: black;
     display: flex;
     position: relative;
+    transition: 0.2s;
     
     
 }
+.product-action-icon a:hover{
+    color:red;
+}
+
+.contact-number{
+    font-size:12px; 
+    font-weight: 500;
+    color:#777;
+    transition: 0.5s;
+}
+.contact-number:hover{
+    color:red
+}
+
 
 .menu-customer-options .product-action-icon:nth-child(2) a:after{
     content:"0";
