@@ -1,0 +1,109 @@
+/* Ümumi səhifə kodları*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+}
+
+ol, ul {
+	list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;  
+}
+
+.col-7{
+    padding-left: 15px;
+    padding-right: 15px;
+   
+}
+.col-5{
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.container{
+    
+}
+/*header-infodakı menu-aboutun kodları */
+
+.menu-about ul{
+    display: flex;
+}
+
+.menu-about ul li a{
+    font-size: 12px;
+    color: #777;
+    font-weight: 500;
+    transition: 0.5s;
+    margin-right: 10px;
+}
+
+.menu-about ul li a:hover{
+    color:#ff003c
+}
+
+/*header-infodakı menu-customer-options kodları  */
+
+.menu-customer-options ul{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.menu-customer-options ul li{
+    margin-left: 25px;
+    
+}
+
+
+.product-action-icon a{
+    font-size: 24px;
+    color: black;
+    display: flex;
+    position: relative;
+    
+    
+}
+
+.menu-customer-options .product-action-icon:nth-child(2) a:after{
+    content:"0";
+    font-size: 0.5em;
+    font-weight: 500;
+    position: absolute;
+    left:20px;
+    top:-8px;
+    color:red;
+
+}
+.menu-customer-options .product-action-icon:nth-child(3) a:after{
+    content:"0";
+    font-size: 0.5em;
+    font-weight: 500;
+    position: absolute;
+    left:24px;
+    top:-8px;
+    color:red;
+}
+
+
+
+.language-icon{
+    width: 19px;
+}
+
+.menu-customer-options ul li:last-child{
+    margin-left: 10px;
+}
+
+
+
