@@ -129,6 +129,7 @@ a{
 #header-brand {
     margin-right: -15px;
     margin-left: -15px;
+    padding: 15px 0px 15px 0px;
    
     
 }
@@ -136,29 +137,46 @@ a{
     display: flex;
     align-items: center;
 }
+#header-brand .col-5{
+    display: flex;
+    align-items: center;
+}
+
+#header-brand .col-3{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 
 .header-brand-logo{
-    border:1px solid red;
+   
     display: flex;
     align-items: center;
     
 }
-.header-brand-logo a:nth-child(1) img{
-    width: 45px;
-}
 .header-brand-logo a:nth-child(2) h1{
     color: black;
 }
+.header-brand-logo a:hover h1 {
+    color: red;
+
+}
+
+.header-brand-logo a:nth-child(1) img{
+    width: 45px;
+}
+
 
 .header-brand-menu-general a{
-    border:1px solid green;
+
     display: flex;
     align-items: center;
     
 }
 
 .header-brand-menu-general a img{
-    width: 24px;
+    width: 26px;
 }
 .header-brand-menu-general a {
     font-size: 14px;
@@ -166,16 +184,79 @@ a{
     color: #282828;
 }
 .header-brand-menu-general a span{
-    margin-left: 10px;
+    margin-left: 5px;
+    
 }
+
+.header-brand-menu-general a:hover{
+    color:red
+}
+
 
 
 .header-brand-search{
-    border:1px solid black;
+
+    width: 100%;
+    display: flex;
+    
 
 }
+.header-brand-search input{
+    
+    border: 1px solid #d8d8d8;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    padding: 14px 2px 14px 15px;
+    width: 85%;
+}
+
+.header-brand-search input:focus{
+    cursor: auto;
+    outline: none;
+    box-shadow: none;
+}
+    
+
+
+.header-brand-search button{
+    width: 10%;
+    border: 1px solid #d8d8d8;
+    border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
+    background-color: white;
+}
+.header-brand-search button:hover{
+    cursor:pointer;
+}
+
+.header-brand-search button i{
+    font-size: 22px;
+}
+
+
 
 .header-brand-account{
-    border:1px solid blue;
+   
+    display: flex;
+    align-items: center;
 }
+
+.header-brand-account a{
+    padding: 0px 10px 0px 10px;
+}
+.header-brand-account a sup{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+.header-brand-account a i{
+    font-size:  24px;
+    color: black;
+    transition: 0.2s;
+}
+
+.header-brand-account a:hover i {
+    color: #ff003c;
+}
+
 
