@@ -1,51 +1,6 @@
-/* Ümumi səhifə kodları*/
-body{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-}
+/*header-info styles start*/
 
-ol, ul {
-	list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-img{
-    width: 100%;
-}
-
-a{
-    text-decoration: none;  
-}
-
-.col-7{
-    padding-left: 15px;
-    padding-right: 15px;
-   
-}
-.col-5{
-    padding-left: 15px;
-    padding-right: 15px;
-    
-}
-.col-2{
-    padding-left: 15px;
-    padding-right: 15px;
-    
-
-}
-
-.container{
-    
-}
-/*header-infodakı menu-aboutun kodları */
-
-.header-info-menu-about ul{
-    display: flex;
-}
-
+/*header-info menu-about styles start */
 .header-info-menu-about ul li a{
     font-size: 12px;
     color: #777;
@@ -53,20 +8,9 @@ a{
     transition: 0.5s;
     margin-right: 10px;
 }
+/* header-info menu-about styles end */
 
-.header-info-menu-about ul li a:hover{
-    color:#ff003c
-}
-
-/*header-infodakı menu-customer-options kodları  */
-
-.header-info-menu-customer ul{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    
-}
-
+/*header-info menu-customer-options styles start */
 .header-info-menu-customer ul li{
     margin-left: 25px;
     
@@ -79,15 +23,16 @@ a{
     position: relative;
 
 }
+
 .header-info-menu-customer ul li:nth-child(2) a:first-child{
     margin-right: 18px;
 }
 
-
-
 .header-info-menu-customer ul li a:hover i{
-    color:red;
+    color:#ff003c;
+    
 }
+
 .header-info-menu-customer ul li:nth-child(3) a{
     font-size:12px; 
     font-weight: 500;
@@ -95,25 +40,20 @@ a{
     transition: 0.5s;
 
 }
-.header-info-menu-customer ul li:nth-child(3) a:hover{
-    color:red
 
-}
 .header-info-menu-customer ul li:nth-child(2) a sup{
     font-size: 12px;
-    color: red;
+    color:#ff003c;
+   
     position: absolute;
     top: -5px;
 } 
-
-
 
 .header-info-menu-customer ul li:first-child a{
     font-size: 14px;
     color: #099D0D;
     font-weight: 500
 }
-
 
 .header-info-menu-customer ul li:nth-child(4) {
     width: 19px;
@@ -123,58 +63,32 @@ a{
 .header-info-menu-customer ul li:nth-child(4) img:last-child{
     margin-left: 10px;
 }
+/* header-info menu-customer-options styles end */
 
-/* header-bradn*/
+/* header-brand styles start*/
 
 #header-brand {
     margin-right: -15px;
     margin-left: -15px;
-    padding: 15px 0px 15px 0px;
+    padding: 17px 0px 17px 0px;
    
     
 }
-#header-brand .col-2{
-    display: flex;
-    align-items: center;
-}
-#header-brand .col-5{
-    display: flex;
-    align-items: center;
-}
 
-#header-brand .col-3{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-
-.header-brand-logo{
-   
-    display: flex;
-    align-items: center;
-    
-}
-.header-brand-logo a:nth-child(2) h1{
+/* header-brand-logo styles start */
+.header-brand-logo a:nth-child(2){
     color: black;
+    font-size: 24px;
+    font-weight: 600;
 }
-.header-brand-logo a:hover h1 {
-    color: red;
 
-}
 
 .header-brand-logo a:nth-child(1) img{
     width: 45px;
 }
+/* header-brand-logo styles end */
 
-
-.header-brand-menu-general a{
-
-    display: flex;
-    align-items: center;
-    
-}
-
+/* header-brand-menu general styles start */
 .header-brand-menu-general a img{
     width: 26px;
 }
@@ -187,22 +101,15 @@ a{
     margin-left: 5px;
     
 }
+/* header-brand-menu-general styles end */
 
-.header-brand-menu-general a:hover{
-    color:red
-}
-
-
-
+/* header-brand-search styles start */
 .header-brand-search{
-
     width: 100%;
     display: flex;
-    
-
 }
+
 .header-brand-search input{
-    
     border: 1px solid #d8d8d8;
     border-top-left-radius: 21px;
     border-bottom-left-radius: 21px;
@@ -216,8 +123,6 @@ a{
     box-shadow: none;
 }
     
-
-
 .header-brand-search button{
     width: 10%;
     border: 1px solid #d8d8d8;
@@ -225,6 +130,7 @@ a{
     border-bottom-right-radius: 21px;
     background-color: white;
 }
+
 .header-brand-search button:hover{
     cursor:pointer;
 }
@@ -232,15 +138,9 @@ a{
 .header-brand-search button i{
     font-size: 22px;
 }
+/* header-brand-search styles end */
 
-
-
-.header-brand-account{
-   
-    display: flex;
-    align-items: center;
-}
-
+/* hrader-brand-account styles start */
 .header-brand-account a{
     padding: 0px 10px 0px 10px;
 }
@@ -258,5 +158,52 @@ a{
 .header-brand-account a:hover i {
     color: #ff003c;
 }
+/* header-brand-account styles end */
 
+/* sidebar styles start */
+.container{
+    border: 1px solid green;
+    
+}
+
+.col-3{
+    border: 1px solid blue;
+    
+}
+a i{
+    border: 1px solid black;
+}
+
+#sidebar ul{
+    border: 2px solid rgba(0,0,0,.08);
+}
+#sidebar ul li{
+    
+    padding: 5px;
+    display: flex;
+    align-items:center;
+    border:1px solid green;
+    
+    
+
+    
+
+}
+#sidebar ul li span{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 14px;
+    letter-spacing: -.32px;
+    color: #545353;
+    border-bottom: 1px solid #9d9999;
+}
+
+#sidebar ul li i{
+    font-size: 20px;
+    width: 24px;
+    margin-right: 15px;
+    color: rgb(119, 12, 12);
+    border: none;
+    border: 1px solid yellow;
+}
 

@@ -7,6 +7,7 @@
     <title>Kontakt Home – Sevindirir | Online Mağaza</title>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
     <script src="https://kit.fontawesome.com/f3c3b76424.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +15,14 @@
    
 </head>
 <body>
-   
+    <!-- header-info start -->
     <section id="header-info">
         <div class="container">
             <div class="row">
-                <div class="col-7">
-                    
-                    <div class="header-info-menu-about">
-                        <ul>
+                <div class="col-7 padding-horizontal">
+                    <!-- header-info-menu-about(sol yuxarı küncdəki linklər) start -->
+                    <div class="header-info-menu-about make-color-red">
+                        <ul class="flex">
                             <li>
                                 <a href="https://kontakt.az/korporativ-satislar/">Korporativ satışlar</a>
                             </li>
@@ -40,11 +41,12 @@
                         </ul>
                     </div>
                 </div>
-
+                <!-- header-info-menu-about(sol yuxarı küncdəki linklər) end -->
                
-                <div class="col-5">
+                <!-- header-info-menu-customer(sağ yuxarıdakı satışla bağlı şeylər) start -->
+                <div class="col-5 padding-horizontal">
                     <div class="header-info-menu-customer">
-                        <ul>
+                        <ul class="flex justify-content-flex-end align-items-center">
                             <li>
                                 <a href="#">Aylıq Ödəniş</a>
                             </li>
@@ -62,7 +64,7 @@
                             </li>
                            
                             <li>
-                                <a href="#" >*6060</a>
+                                <a href="#">*6060</a>
                             </li>
 
                             <li>
@@ -70,42 +72,45 @@
                                 <img src="images/russia.png" alt="">
 
                             </li>
-                            
                         </ul>
-
                     </div>
                 </div>
+                <!-- header-info-menu-customer(sağ yuxarıdakı satışla bağlı şeylər) end -->
             </div>
         </div>
     </section>
+    <!-- header-info end -->
 
+    <!-- header-brand start -->
     <section id="header-brand">
         <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <div class="header-brand-logo">
+                <!-- header-brand-logo(Kontaktın logosu) started -->
+                <div class="col-2 padding-horizontal flex align-items-center">
+                    <div class="header-brand-logo make-color-red flex align-items-center ">
                         <a href="#">
                             <img src="images/KontaktLogo.jpeg" alt="">
                         </a>
                         <a href="#">
-                            <h1>kontakt</h1>
+                            kontakt
                         </a>
-
                     </div>
                 </div>
+                <!-- header-brand-logo(Kontaktın logosu) end -->
 
-                <div class="col-2">
-                    <div class="header-brand-menu-general">
-                        <a href="#">
+                <!-- header-brand-menu-general(tıkladıqda side-bar menunu aktivləşdirir) start -->
+                <div class="col-2 flex align-items-center">
+                    <div class="header-brand-menu-general make-color-red ">
+                        <a href="#" class="flex align-items-center ">
                             <img src="images/menuicon.png" alt="">
                             <span>Menyu</span>
                         </a>
-                        
-
                     </div>
                 </div>
-
-                <div class="col-5">
+                <!-- header-brand-menu-general(tıkladıqda side-bar menunu aktivləşdirir) end -->
+                
+                <!-- header-brand-search start -->
+                <div class="col-5 padding-horizontal flex align-items-center">
                     <div class="header-brand-search">
                         <input type="text" placeholder="Axtarış...">
                         <button type="submit">
@@ -113,22 +118,140 @@
                         </button>
                     </div>
                 </div>
+                <!-- header-brand-search end -->
 
-                <div class="col-3">
-                    <div class="header-brand-account">
+                <!-- header-brand-account(sağda hesaba daxil ol,səbət hissə) start -->
+                <div class="col-3 padding-horizontal flex align-items-center justify-content-flex-end">
+                    <div class="header-brand-account flex align-items-center">
                         <a href="">
                             <i class="fa-regular fa-user"></i>
                             <sup>Daxil ol</sup>
                         </a>
-                            <a href="">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                <sup>Səbət</sup>
-                          
+
+                        <a href="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <sup>Səbət</sup>
                         </a>
+
                     </div>
                 </div>
+                <!-- header-brand-account(sağda hesaba daxil ol,səbət hissə) end -->
             </div>
 
+        </div>
+    </section>
+    <!--header-brand end -->
+
+    <!-- sidebar start -->
+    <section id="sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 padding-horizontal">
+                    <ul >
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-mobile"></i>
+                            </a>
+                            <span>Telefonlar və Planşetlər</span>
+
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                </a>
+                            <span>Saatlar və qolbaqlar</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-tv"></i>
+                                </a>
+                            <span>Tv, audio video</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-laptop"></i>
+                            </a>
+                            <span>Kompüter və aksesuarlar</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                            <span>Məişət texnikası</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-gamepad"></i>
+                            </a>
+                            <span>Hobbi və əyləncə</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-eye-dropper"></i>
+                            </a>
+                            <span>Gözəllik və sağlamlıq</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-camera"></i>
+                            </a>
+                            <span>Foto və video</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-car"></i>
+                            </a>
+                            <span>Alətlər və Avtomobil məhsulları</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-broom"></i>
+                            </a>
+                            <span>Ev və bağ</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-couch"></i>
+                            </a>
+                            <span>Mebel və Ev tekstili</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-kickstarter-k"></i>
+                            </a>
+                            <span>Kontakt Plus</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-book"></i>
+                            </a>
+                            <span>Dəftərxana ləvazimatları</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-child-reaching"></i>
+                            </a>
+                            <span>Uşaq aləmi</span>
+                        </li>
+
+                    </ul>
+
+                
+                </div>
+            </div>
         </div>
     </section>
     
