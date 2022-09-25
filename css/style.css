@@ -161,18 +161,7 @@
 /* header-brand-account styles end */
 
 /* sidebar styles start */
-.container{
-    border: 1px solid green;
-    
-}
 
-.col-3{
-    border: 1px solid blue;
-    
-}
-a i{
-    border: 1px solid black;
-}
 
 #sidebar ul{
     border: 2px solid rgba(0,0,0,.08);
@@ -182,13 +171,8 @@ a i{
     padding: 5px;
     display: flex;
     align-items:center;
-    border:1px solid green;
-    
-    
-
-    
-
 }
+
 #sidebar ul li span{
     padding-bottom: 15px;
     padding-top: 10px;
@@ -204,6 +188,6 @@ a i{
     margin-right: 15px;
     color: rgb(119, 12, 12);
     border: none;
-    border: 1px solid yellow;
+    
 }
 
