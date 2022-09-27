@@ -160,34 +160,57 @@
 }
 /* header-brand-account styles end */
 
-/* sidebar styles start */
+/* products-initial-info-sidebar styles start */
 
 
-#sidebar .menu{
-    border: 2px solid rgba(0,0,0,.08);
-}
-#sidebar .menu li{
-    
-    padding: 5px;
+#products-info{
     display: flex;
-    align-items:center;
+    border:1px solid red;
 }
 
-#sidebar .menu li span{
-    padding-bottom: 15px;
-    padding-top: 10px;
+.products-info-sidebar{
+    border: 2px solid rgba(0,0,0,.08)
+}
+.products-info-sidebar ul li{
+    padding: 10px;
+    
+    
+}
+
+.products-info-sidebar ul li span{
+    margin-left: 15px;
     font-size: 14px;
     letter-spacing: -.32px;
     color: #545353;
-    border-bottom: 1px solid #9d9999;
-}
-
-#sidebar .menu li i{
-    font-size: 20px;
-    width: 24px;
-    margin-right: 15px;
-    color: rgb(119, 12, 12);
-    border: none;
+    margin-left: 15px;
+    width: 100%;
+    position: relative;
+   
+    
     
 }
 
+.products-info-sidebar ul li a i{
+    width: 20px;
+    font-size: 20px;
+    color: #b94f68;
+}
+
+.products-info-sidebar ul li span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    opacity: .1;
+    left: 5px;
+    margin-top: -9px;
+    border-bottom: 1px solid #253444;
+}
+
+.products-info-ads{
+    border: 1px solid brown;
+}
+
+.products-info-ads img{
+    width: 100%;
+    height: 100%;
+}
