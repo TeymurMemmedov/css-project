@@ -162,7 +162,7 @@
 
 /* products-initial-info-sidebar styles start */
 
-
+/* products-info başladı */
 #products-info{
     display: flex;
     border:1px solid red;
@@ -176,7 +176,7 @@
     
     
 }
-
+/* products-info-sidebar başladı */
 .products-info-sidebar ul li span{
     margin-left: 15px;
     font-size: 14px;
@@ -205,6 +205,7 @@
     margin-top: -9px;
     border-bottom: 1px solid #253444;
 }
+/* products-info-sidebar bitdi */
 
 .products-info-ads{
     border: 1px solid brown;
