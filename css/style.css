@@ -161,7 +161,8 @@
 /* products-info başladı */
 #products-info{
     display: flex;
-    border:1px solid red;
+   
+
 }
 
 /* products-info-sidebar başladı */
@@ -225,7 +226,7 @@ hündürlük verdim, ağlıma ilk bu gəldi, visual olaraq da həll etdi problem
 /* products-info-sidebar bitdi */
 
 .products-info-content{
-    border: 1px solid brown;
+    
     display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(8,67px);
