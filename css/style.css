@@ -649,6 +649,7 @@ hündürlük verdim, ağlıma ilk bu gəldi, visual olaraq da həll etdi problem
     display: flex;
     padding: 5px;
     font-size: 14px;
+    align-items: center;
     
 }
 
