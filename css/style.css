@@ -161,6 +161,7 @@
 /* products-info başladı */
 #products-info{
     display: flex;
+    
    
 
 }
@@ -416,4 +417,277 @@ hündürlük verdim, ağlıma ilk bu gəldi, visual olaraq da həll etdi problem
 
 .products-info-ads-campaign ul li span{
     font-size: 10px;
+}
+
+/* weekly-offer start */
+
+.weekly-offer-content{
+    display: flex;
+    flex-wrap: wrap; /* İntro,ayrı-ayrı itemler və bütün təkliflər alt-alta düşsün deyə wrap verdim*/
+    margin-top: 30px; 
+}
+    /*weekly-intro started  */
+.weekly-offer-intro{
+    width: 100%;
+    display: flex;
+}
+
+.weekly-offer-intro span:first-child{
+    /* Burda əsas yaşadığım problem, həftənin təklifləri yazısını sola, o təqvimi sağa vermək idi */
+    width: 50%;
+    text-align: left;
+     /* yarı-yarı böldüm və həftənin təklifinə align-left verdim bu həll oldu */
+    font-size: 26px;
+    font-weight: 700;
+    color: #282828;
+}
+.weekly-offer-intro ul{
+    /* Təqvimi sağa vermək üçün isə ul-ə flex verdim, justify-contentlə sağa verdim
+    bu qədər tez-tez hər kiçik şeyə flex vermək normal deyil,amma problemlərimi həll edir
+    */
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+
+.weekly-offer-intro ul li{
+    text-align: center;
+    padding: 0px 20px;
+    color: #323232;
+    position: relative;
+    
+}
+.weekly-offer-intro ul li::after{
+    content: "";
+    position: absolute;
+    border: 0.1px solid #777;
+    height: 50%;
+    top: 25%;
+    right: 0;
+}
+
+.weekly-offer-intro ul li:last-child::after{
+    /* Sonuncu təqvim elementindən sonra border olmamalıdır, belə həll etdim */
+    border: none;
+}
+
+.weekly-offer-intro ul li span{
+    font-size: 10px;
+}
+/* weekly-intro end */
+
+/* weekly-offer items started */
+
+
+.weekly-offer-items{
+    /* Bu elementləri ümumilikdə horizontal yan yana düzəcəm flex verdim, o heç */
+    display: flex;
+    height: 450px;
+    /* Hündürlük vermə səbəbim isə hər bir item-ın içindəki şəkli adı falan müəyyən boşluqla
+    düzməliyəm verticalda, justify-content:space məntiqi ilə, 
+    o da yalnız sabit ölçüdə mümkündür mən bilən */
+}
+.weekly-offer-item{
+    /* inheritlə hündürlüyü hər bir elementə ötürdüm */
+    height: inherit;
+    width: 25%;
+    border:1px solid rgba(0,0,0,.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.weekly-offer-item:hover {
+    box-shadow: 2px 3.5px 24px 0 rgb(18 16 11 / 31%);
+    cursor: pointer;}
+
+.item-top span:first-child{
+
+    font-size: 10px;
+    font-weight: 500;
+    padding: 1px 6px;
+    color:#ff023c;
+    border:1px solid #ff023c;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.item-top span:nth-child(2){
+    font-size: 10px;
+    font-weight: 500;
+    padding: 1px 6px;
+    border: 1px solid rgb(0, 153, 204);
+    border-radius: 5px;
+    color: rgb(0, 153, 204);
+}
+
+.item-image{
+    /* Şəkil divi 100 faiz olduqda təbii olaraq şəkil də çox böyük olurdu kiçiltdim */
+    width: 95%;
+    margin: auto;
+}
+
+.item-info{
+    margin: 0 auto;
+}
+
+.item-info a{
+    /* burda əsas problemim, a elementinin default olaraq text align-a reaksiya vermənəsi idi
+    display-i dəyişərək çözdüm
+    
+    bir də sabit hündürlük verdim və top-a sabitlədim, əks halda bütün yazılar eyni hündürlükdən başlamırdı və
+    simmetriya pozulurdu*/
+    height: 40px;
+    vertical-align: top;
+    text-align:center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #282828;
+    display: inline-block;
+}
+
+.item-info ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-info ul li{
+    width: 100px;
+    text-align: center;
+    color: rgba(254,2,60,.91);
+    font-size: 14px;
+    position: relative;
+
+}
+
+.item-info ul li:first-child::after{
+    content: "";
+    height: 40px;
+    border-right: 1px solid grey;
+    position: absolute;
+    left: 110px;
+    bottom: -5px;
+}
+
+.item-info ul li:last-child{
+    font-weight: 700;
+}
+
+.item-price{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-price span{
+    
+    font-size: 18px;
+    color: #282828;
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+.item-price small{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.item-price button{
+    
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #9c3;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    color:white;
+    font-weight: 700;
+}
+
+.weekly-offer-content .all-offers   {
+    width: 100%;
+   padding: 10px;
+   font-size: 15px;
+   color: black;
+   font-weight: 700;
+   display: flex;
+   justify-content: center;
+   background-color: #f0f1f2;
+   border: 2px solid rgba(0,0,0,.08);
+   transition: 0.5s;
+}
+
+.weekly-offer-content .all-offers:hover{
+    background-color: red;
+    color: white;
+}
+
+.weekly-offer-item:hover .item-extra-details{
+   box-shadow:  2px 10px 24px 0 rgb(18 16 11 / 31%);
+   display: block;
+}
+
+.item-extra-details{
+    background-color: white;
+    border: 1px solid #f0f1f2;
+    border-top: 2px solid #f0f1f2;
+    display: none;
+}
+.item-extra-details ul{
+    margin:5px 0px;
+    list-style-type: circle;
+    overflow: auto;
+    height: 70%;
+}
+
+.item-extra-details ul li{
+    display: flex;
+    padding: 5px;
+    font-size: 14px;
+    
+}
+
+.item-extra-details ul li p{
+    width: 60%;
+    text-align: left;
+    font-weight:700;
+}
+
+.item-extra-details ul li span{
+    width: 40%;
+    text-align: right;
+}
+
+.item-extra-sell{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.item-extra-details .item-extra-sell a{
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #f0f1f2;
+    transition: 0.5s;
+}
+
+.item-extra-details .item-extra-sell a:hover{
+    background-color: #e3e3e3;
+}
+
+.item-extra-details .item-extra-sell a i{
+    font-size: 20px;
+    color: black;
+    margin-right: 5px;
+}
+
+.item-extra-details .item-extra-sell a span{
+    font-size: 14px;
+    color:black;
+    font-weight: 700;
 }
